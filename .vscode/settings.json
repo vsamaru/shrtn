@@ -1,0 +1,6 @@
+{
+  "eslint.packageManager": "npm",
+  "npm.packageManager": "npm",
+  "prettier.packageManager": "npm",
+  "typescriptHero.imports.insertSemicolons": true
+}

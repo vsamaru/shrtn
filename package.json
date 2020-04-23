@@ -1,0 +1,35 @@
+{
+  "name": "shrtn",
+  "description": "A simple link shortener using Airtable and Vercel 🌴",
+  "version": "2.0.0",
+  "author": "Griko Nibras <git@griko.id>",
+  "repository": "git@github.com:grikomsn/shrtn.git",
+  "homepage": "https://github.com/grikomsn/shrtn",
+  "bugs": "https://github.com/grikomsn/shrtn/issues",
+  "scripts": {
+    "format": "prettier --write \"{api/**/*.js,now.json,README.md}\"",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
+  },
+  "dependencies": {
+    "airtable": "^0.8.1"
+  },
+  "devDependencies": {
+    "@now/node": "^1.5.1",
+    "all-contributors-cli": "^6.14.2",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "prettier": {
+    "proseWrap": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "license": "MIT"
+}

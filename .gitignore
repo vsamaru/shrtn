@@ -1,0 +1,7 @@
+!.env.example
+
+*.log
+.DS_Store
+.env
+.now
+node_modules
