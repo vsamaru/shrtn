@@ -1,12 +1,7 @@
 {
-  "alias": ["shrtn", "shrtn.griko.id"],
   "env": {
     "AIRTABLE_API_KEY": "@airtable-api-key",
     "AIRTABLE_BASE_ID": "app9Jz0Oqy2l7i6P8"
-  },
-  "github": {
-    "autoAlias": true,
-    "enabled": true
   },
   "headers": [
     {
@@ -23,14 +18,22 @@
     {
       "source": "/",
       "destination": "https://github.com/grikomsn/shrtn"
+    },
+    {
+      "source": "/(redirect)",
+      "destination": "/api/redirect?uid=$1"
     }
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/api/$1"
+      "source": "/:uid",
+      "destination": "/api/redirect"
     }
   ],
+  "github": {
+    "autoAlias": true,
+    "enabled": true
+  },
   "cleanUrls": true,
   "trailingSlash": false,
   "public": true
