@@ -10,6 +10,7 @@
 
 ---
 
+- [Deno version](#deno-version)
 - [Examples](#examples)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
@@ -21,6 +22,11 @@
 - [License](#license)
 
 ---
+
+## Deno version
+
+This is the Node.js version of Shrtn. View the Deno version on
+<https://github.com/grikomsn/shrtn-deno>.
 
 ## Examples
 
@@ -69,16 +75,17 @@ View source links at the
 
 3. Fork this repository
 
-4. Add your API key to `now secrets`
+4. Add your API key to `vercel secrets`
 
    ```console
-   $ now secrets add airtable-api-key keyXXXXXXXXXXXXXX
+   $ vercel secrets add airtable-api-key keyXXXXXXXXXXXXXX
    ```
 
-   > Note: [`now`](https://www.npmjs.com/package/now) is a CLI program which you
-   > can install by running `npm -g i now` or `yarn global add now`
+   > Note: [`vercel`](https://www.npmjs.com/package/vercel) is a CLI program
+   > which you can install by running `npm -g i vercel` or
+   > `yarn global add vercel`
 
-5. Add your base ID on `now.json`
+5. Add your base ID on `vercel.json`
 
    ```json
    {
@@ -98,10 +105,10 @@ View source links at the
 ### Default redirect
 
 If base URL is accessed or no unique URL is given, the function will redirect to
-a specific URL defined on the `now.json` configuration file.
+a specific URL defined on the `vercel.json` configuration file.
 
 You can configure the default redirect by changing
-[the `redirects[0].destination` value on the `now.json` file](https://github.com/grikomsn/shrtn/blob/master/now.json#L25).
+[the `redirects[0].destination` value on the `vercel.json` file](https://github.com/grikomsn/shrtn/blob/master/vercel.json#L25).
 
 ## Bug or feature request
 
