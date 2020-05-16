@@ -18,10 +18,6 @@
     {
       "source": "/",
       "destination": "https://github.com/grikomsn/shrtn"
-    },
-    {
-      "source": "/(redirect)",
-      "destination": "/api/redirect?uid=$1"
     }
   ],
   "rewrites": [
