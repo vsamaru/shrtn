@@ -17,7 +17,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "https://github.com/grikomsn/shrtn"
+      "destination": "https://shrtn-six.vercel.app"
     }
   ],
   "rewrites": [
